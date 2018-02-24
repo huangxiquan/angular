@@ -1,0 +1,14 @@
+/* Master Styles */
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.article-tag {
+  color: #24c875;
+}
+
+.article-nav-cover {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,11 @@
+<div class="media">
+      <a class="media-left media-middle" href="#">
+        <img class="img-circle" alt="180X180" src="https://files.cbnweek.com/160dcf2e1e486bd94d7b34dd080c4b06_180x180" width="50" height="50" >
+      </a>
+      <div class="media-body media-middle">
+          <span>{{article.data[0].authors[0].name}}</span><span class="article-tag" *ngIf="article.data[0].topics[0]"> {{article.data[0].topics[0].name}}</span>
+          <div class="media-body">
+            <span style="color:#9b9b9b;margin-top:3px">16小时前•1千次浏览</span>
+          </div>
+      </div>
+</div>
