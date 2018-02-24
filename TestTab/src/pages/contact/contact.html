@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      个人中心
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-card  >
+    <ion-item (click)="jumpToLogin()" >
+      <ion-avatar item-left  >
+        <img  src="../../assets/img/personal_head_unlogin.png" />
+      </ion-avatar>
+
+      <h2>未登录</h2>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <button ion-item >我的收藏</button>
+      <button ion-item >我的关注</button>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <button ion-item >订阅信息</button>
+      <button ion-item >离线杂志</button>
+    </ion-list>
+  </ion-card>
+
+  <ion-card>
+    <ion-list>
+      <button ion-item >使用帮助</button>
+      <button ion-item >意见反馈</button>
+      <button ion-item >设置</button>
+    </ion-list>
+  </ion-card>
+
+</ion-content>

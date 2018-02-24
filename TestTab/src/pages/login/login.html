@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar color="primary" no-border-bottom  >
+    <ion-title></ion-title>
+  </ion-navbar>
+
+  <ion-toolbar no-border-top >
+    <ion-segment [(ngModel)]="tab" >
+      <ion-segment-button value="login" >
+        登录
+      </ion-segment-button>
+      <ion-segment-button value = "register"  >
+        注册
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+  <div [ngSwitch]="tab" >
+      <div *ngSwitchCase="'login'" >
+        <h1>登录</h1>
+      </div>
+      <div *ngSwitchCase="'register'" >
+        <h1>注册</h1>
+      </div>
+  </div>
+</ion-content>

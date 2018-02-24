@@ -1,0 +1,22 @@
+page-article-detail {
+  .card-header-md {
+    font-weight: bold;
+  }
+  .article-body{
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+
+  .article-body p {
+    line-height: 1.8;
+    padding: 10px 0px;
+  }
+
+  figure {
+    -webkit-margin-start:0px;
+    -webkit-margin-end:0px;
+  }
+  p {
+    line-height: 20px;
+  }
+}

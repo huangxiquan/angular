@@ -1,0 +1,27 @@
+<ion-header >
+
+  <ion-navbar color="primary" >
+    <ion-title>文章详情</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content >
+  <div *ngIf = "article" >
+    <div>
+      <img [src]="article.cover_url">
+    </div>
+    <ion-card>
+      <ion-card-header>
+        {{article.title}}
+      </ion-card-header>
+      <ion-card-content>
+        {{article.summary}}
+      </ion-card-content>
+    </ion-card>
+
+  <ion-card class="article-body" >
+    <ion-card-content  [innerHtml] = "article.content" >
+    </ion-card-content>
+  </ion-card>
+</div>
+</ion-content>

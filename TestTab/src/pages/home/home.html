@@ -1,0 +1,25 @@
+<ion-content>
+  <div *ngIf="articles" >
+    <div class="home_header"  [ngStyle]="{'background-image':'url(' + articles[0].data[0].cover_url + ')'}" >
+       <h2>{{articles[0].data[0].title}}</h2>
+    </div>
+    <ion-list>
+      <ion-card *ngFor="let article of articles" >
+        <div>
+          <img [src]="article.data[0].cover_url" *ngIf="isArticle(article)" (click)="pushDetail($event,article.data[0].id)" >
+        </div>
+        <ion-card-content *ngIf="isArticle(article)" >
+            <ion-card-title>
+              {{article.data[0].title}}
+            </ion-card-title>
+            <p>
+              {{article.data[0].summary}}
+            </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-list>
+    <ion-infinite-scroll (ionInfinite)="loadMoreData($event)">
+       <ion-infinite-scroll-content loadingText="加载中..."></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+</div>
+</ion-content>
